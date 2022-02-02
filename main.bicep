@@ -39,7 +39,7 @@ module vnetaks 'modules/vnet/vnet.bicep' = {
   ]
 }
 
-module aksIdentity 'modules/Identity/userassigned.bicep' = {
+module aksIdentity 'modules/identity/userassigned.bicep' = {
   scope: resourceGroup(rg.name)
   name: 'aksIdentity'
   params: {
